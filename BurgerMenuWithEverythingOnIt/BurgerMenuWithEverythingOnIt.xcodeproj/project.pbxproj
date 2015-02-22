@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF4126DC1A929FB800314F26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4126DB1A929FB800314F26 /* main.m */; };
+		FF4126DF1A929FB800314F26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4126DE1A929FB800314F26 /* AppDelegate.m */; };
+		FF4126E21A929FB800314F26 /* BurgerMenuWithEverythingOnIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF4126E01A929FB800314F26 /* BurgerMenuWithEverythingOnIt.xcdatamodeld */; };
+		FF4126E51A929FB800314F26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4126E41A929FB800314F26 /* ViewController.m */; };
+		FF4126E81A929FB800314F26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4126E61A929FB800314F26 /* Main.storyboard */; };
+		FF4126EA1A929FB800314F26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4126E91A929FB800314F26 /* Images.xcassets */; };
+		FF4126ED1A929FB800314F26 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF4126EB1A929FB800314F26 /* LaunchScreen.xib */; };
+		FF4126F91A929FB800314F26 /* BurgerMenuWithEverythingOnItTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4126F81A929FB800314F26 /* BurgerMenuWithEverythingOnItTests.m */; };
+		FF4127041A929FDD00314F26 /* BurgerContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4127031A929FDD00314F26 /* BurgerContainerController.m */; };
+		FF41270A1A92A07900314F26 /* WebOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4127091A92A07900314F26 /* WebOAuthViewController.m */; };
+		FF41270D1A92A0AD00314F26 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF41270C1A92A0AD00314F26 /* MenuTableViewController.m */; };
+		FFB077811A95395600D77DEB /* SearchQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB077801A95395600D77DEB /* SearchQuestionsViewController.m */; };
+		FFB077841A953A9B00D77DEB /* NetworkControllerToStackOverflow.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB077831A953A9B00D77DEB /* NetworkControllerToStackOverflow.m */; };
+		FFB077871A953B0400D77DEB /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB077861A953B0400D77DEB /* Question.m */; };
+		FFB0778A1A953B7900D77DEB /* QuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB077891A953B7900D77DEB /* QuestionCell.m */; };
+		FFB0778D1A953FA400D77DEB /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB0778C1A953FA400D77DEB /* Constants.m */; };
+		FFB077911A95415D00D77DEB /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB077901A95415D00D77DEB /* ProfileViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FFC031ED1A9A3CF500B012CC /* BurgerWithTheWorksImage_w25_h25.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC031EC1A9A3CF500B012CC /* BurgerWithTheWorksImage_w25_h25.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF4126F31A929FB800314F26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF4126CE1A929FB800314F26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF4126D51A929FB800314F26;
+			remoteInfo = BurgerMenuWithEverythingOnIt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF4126D61A929FB800314F26 /* BurgerMenuWithEverythingOnIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurgerMenuWithEverythingOnIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4126DA1A929FB800314F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4126DB1A929FB800314F26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF4126DD1A929FB800314F26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF4126DE1A929FB800314F26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF4126E11A929FB800314F26 /* BurgerMenuWithEverythingOnIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BurgerMenuWithEverythingOnIt.xcdatamodel; sourceTree = "<group>"; };
+		FF4126E31A929FB800314F26 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF4126E41A929FB800314F26 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FF4126E71A929FB800314F26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF4126E91A929FB800314F26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FF4126EC1A929FB800314F26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FF4126F21A929FB800314F26 /* BurgerMenuWithEverythingOnItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BurgerMenuWithEverythingOnItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4126F71A929FB800314F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4126F81A929FB800314F26 /* BurgerMenuWithEverythingOnItTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BurgerMenuWithEverythingOnItTests.m; sourceTree = "<group>"; };
+		FF4127021A929FDD00314F26 /* BurgerContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BurgerContainerController.h; path = ../BurgerContainerController.h; sourceTree = "<group>"; };
+		FF4127031A929FDD00314F26 /* BurgerContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BurgerContainerController.m; path = ../BurgerContainerController.m; sourceTree = "<group>"; };
+		FF4127081A92A07900314F26 /* WebOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebOAuthViewController.h; sourceTree = "<group>"; };
+		FF4127091A92A07900314F26 /* WebOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebOAuthViewController.m; sourceTree = "<group>"; };
+		FF41270B1A92A0AD00314F26 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		FF41270C1A92A0AD00314F26 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
+		FFB0777F1A95395600D77DEB /* SearchQuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchQuestionsViewController.h; sourceTree = "<group>"; };
+		FFB077801A95395600D77DEB /* SearchQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchQuestionsViewController.m; sourceTree = "<group>"; };
+		FFB077821A953A9B00D77DEB /* NetworkControllerToStackOverflow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkControllerToStackOverflow.h; sourceTree = "<group>"; };
+		FFB077831A953A9B00D77DEB /* NetworkControllerToStackOverflow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkControllerToStackOverflow.m; sourceTree = "<group>"; };
+		FFB077851A953B0400D77DEB /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		FFB077861A953B0400D77DEB /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		FFB077881A953B7800D77DEB /* QuestionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionCell.h; sourceTree = "<group>"; };
+		FFB077891A953B7900D77DEB /* QuestionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionCell.m; sourceTree = "<group>"; };
+		FFB0778B1A953FA400D77DEB /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		FFB0778C1A953FA400D77DEB /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		FFB0778E1A95407100D77DEB /* MenuPressedDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuPressedDelegate.h; sourceTree = "<group>"; };
+		FFB0778F1A95415D00D77DEB /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		FFB077901A95415D00D77DEB /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		FFC031EC1A9A3CF500B012CC /* BurgerWithTheWorksImage_w25_h25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BurgerWithTheWorksImage_w25_h25.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF4126D31A929FB800314F26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4126EF1A929FB800314F26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF4126CD1A929FB800314F26 = {
+			isa = PBXGroup;
+			children = (
+				FF4126D81A929FB800314F26 /* BurgerMenuWithEverythingOnIt */,
+				FF4126F51A929FB800314F26 /* BurgerMenuWithEverythingOnItTests */,
+				FF4126D71A929FB800314F26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF4126D71A929FB800314F26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF4126D61A929FB800314F26 /* BurgerMenuWithEverythingOnIt.app */,
+				FF4126F21A929FB800314F26 /* BurgerMenuWithEverythingOnItTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF4126D81A929FB800314F26 /* BurgerMenuWithEverythingOnIt */ = {
+			isa = PBXGroup;
+			children = (
+				FF4126DD1A929FB800314F26 /* AppDelegate.h */,
+				FF4126DE1A929FB800314F26 /* AppDelegate.m */,
+				FF4126E61A929FB800314F26 /* Main.storyboard */,
+				FF4127061A929FF300314F26 /* View */,
+				FF4127051A929FE600314F26 /* Model */,
+				FF4127071A929FFA00314F26 /* Controller */,
+				FF4126E31A929FB800314F26 /* ViewController.h */,
+				FF4126E41A929FB800314F26 /* ViewController.m */,
+				FF4127021A929FDD00314F26 /* BurgerContainerController.h */,
+				FF4127031A929FDD00314F26 /* BurgerContainerController.m */,
+				FFB0778F1A95415D00D77DEB /* ProfileViewController.h */,
+				FFB077901A95415D00D77DEB /* ProfileViewController.m */,
+				FFB0777F1A95395600D77DEB /* SearchQuestionsViewController.h */,
+				FFB077801A95395600D77DEB /* SearchQuestionsViewController.m */,
+				FF41270B1A92A0AD00314F26 /* MenuTableViewController.h */,
+				FF41270C1A92A0AD00314F26 /* MenuTableViewController.m */,
+				FFB0778E1A95407100D77DEB /* MenuPressedDelegate.h */,
+				FFB077821A953A9B00D77DEB /* NetworkControllerToStackOverflow.h */,
+				FFB077831A953A9B00D77DEB /* NetworkControllerToStackOverflow.m */,
+				FFB077881A953B7800D77DEB /* QuestionCell.h */,
+				FFB077891A953B7900D77DEB /* QuestionCell.m */,
+				FFB0778B1A953FA400D77DEB /* Constants.h */,
+				FFB0778C1A953FA400D77DEB /* Constants.m */,
+				FFB077851A953B0400D77DEB /* Question.h */,
+				FFB077861A953B0400D77DEB /* Question.m */,
+				FF4127081A92A07900314F26 /* WebOAuthViewController.h */,
+				FF4127091A92A07900314F26 /* WebOAuthViewController.m */,
+				FF4126E91A929FB800314F26 /* Images.xcassets */,
+				FF4126EB1A929FB800314F26 /* LaunchScreen.xib */,
+				FF4126E01A929FB800314F26 /* BurgerMenuWithEverythingOnIt.xcdatamodeld */,
+				FF4126D91A929FB800314F26 /* Supporting Files */,
+			);
+			path = BurgerMenuWithEverythingOnIt;
+			sourceTree = "<group>";
+		};
+		FF4126D91A929FB800314F26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF4126DA1A929FB800314F26 /* Info.plist */,
+				FFC031EC1A9A3CF500B012CC /* BurgerWithTheWorksImage_w25_h25.png */,
+				FF4126DB1A929FB800314F26 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF4126F51A929FB800314F26 /* BurgerMenuWithEverythingOnItTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF4126F81A929FB800314F26 /* BurgerMenuWithEverythingOnItTests.m */,
+				FF4126F61A929FB800314F26 /* Supporting Files */,
+			);
+			path = BurgerMenuWithEverythingOnItTests;
+			sourceTree = "<group>";
+		};
+		FF4126F61A929FB800314F26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF4126F71A929FB800314F26 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF4127051A929FE600314F26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FF4127061A929FF300314F26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FF4127071A929FFA00314F26 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF4126D51A929FB800314F26 /* BurgerMenuWithEverythingOnIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4126FC1A929FB800314F26 /* Build configuration list for PBXNativeTarget "BurgerMenuWithEverythingOnIt" */;
+			buildPhases = (
+				FF4126D21A929FB800314F26 /* Sources */,
+				FF4126D31A929FB800314F26 /* Frameworks */,
+				FF4126D41A929FB800314F26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BurgerMenuWithEverythingOnIt;
+			productName = BurgerMenuWithEverythingOnIt;
+			productReference = FF4126D61A929FB800314F26 /* BurgerMenuWithEverythingOnIt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF4126F11A929FB800314F26 /* BurgerMenuWithEverythingOnItTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4126FF1A929FB800314F26 /* Build configuration list for PBXNativeTarget "BurgerMenuWithEverythingOnItTests" */;
+			buildPhases = (
+				FF4126EE1A929FB800314F26 /* Sources */,
+				FF4126EF1A929FB800314F26 /* Frameworks */,
+				FF4126F01A929FB800314F26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF4126F41A929FB800314F26 /* PBXTargetDependency */,
+			);
+			name = BurgerMenuWithEverythingOnItTests;
+			productName = BurgerMenuWithEverythingOnItTests;
+			productReference = FF4126F21A929FB800314F26 /* BurgerMenuWithEverythingOnItTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF4126CE1A929FB800314F26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = cm2y;
+				TargetAttributes = {
+					FF4126D51A929FB800314F26 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					FF4126F11A929FB800314F26 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = FF4126D51A929FB800314F26;
+					};
+				};
+			};
+			buildConfigurationList = FF4126D11A929FB800314F26 /* Build configuration list for PBXProject "BurgerMenuWithEverythingOnIt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF4126CD1A929FB800314F26;
+			productRefGroup = FF4126D71A929FB800314F26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF4126D51A929FB800314F26 /* BurgerMenuWithEverythingOnIt */,
+				FF4126F11A929FB800314F26 /* BurgerMenuWithEverythingOnItTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF4126D41A929FB800314F26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4126E81A929FB800314F26 /* Main.storyboard in Resources */,
+				FFC031ED1A9A3CF500B012CC /* BurgerWithTheWorksImage_w25_h25.png in Resources */,
+				FF4126ED1A929FB800314F26 /* LaunchScreen.xib in Resources */,
+				FF4126EA1A929FB800314F26 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4126F01A929FB800314F26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF4126D21A929FB800314F26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4127041A929FDD00314F26 /* BurgerContainerController.m in Sources */,
+				FF4126E21A929FB800314F26 /* BurgerMenuWithEverythingOnIt.xcdatamodeld in Sources */,
+				FFB077811A95395600D77DEB /* SearchQuestionsViewController.m in Sources */,
+				FF4126DF1A929FB800314F26 /* AppDelegate.m in Sources */,
+				FF4126E51A929FB800314F26 /* ViewController.m in Sources */,
+				FF4126DC1A929FB800314F26 /* main.m in Sources */,
+				FFB0778A1A953B7900D77DEB /* QuestionCell.m in Sources */,
+				FF41270D1A92A0AD00314F26 /* MenuTableViewController.m in Sources */,
+				FFB077871A953B0400D77DEB /* Question.m in Sources */,
+				FFB077911A95415D00D77DEB /* ProfileViewController.m in Sources */,
+				FF41270A1A92A07900314F26 /* WebOAuthViewController.m in Sources */,
+				FFB077841A953A9B00D77DEB /* NetworkControllerToStackOverflow.m in Sources */,
+				FFB0778D1A953FA400D77DEB /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4126EE1A929FB800314F26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4126F91A929FB800314F26 /* BurgerMenuWithEverythingOnItTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF4126F41A929FB800314F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF4126D51A929FB800314F26 /* BurgerMenuWithEverythingOnIt */;
+			targetProxy = FF4126F31A929FB800314F26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF4126E61A929FB800314F26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF4126E71A929FB800314F26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF4126EB1A929FB800314F26 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF4126EC1A929FB800314F26 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF4126FA1A929FB800314F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF4126FB1A929FB800314F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF4126FD1A929FB800314F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BurgerMenuWithEverythingOnIt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF4126FE1A929FB800314F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BurgerMenuWithEverythingOnIt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FF4127001A929FB800314F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BurgerMenuWithEverythingOnItTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BurgerMenuWithEverythingOnIt.app/BurgerMenuWithEverythingOnIt";
+			};
+			name = Debug;
+		};
+		FF4127011A929FB800314F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BurgerMenuWithEverythingOnItTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BurgerMenuWithEverythingOnIt.app/BurgerMenuWithEverythingOnIt";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF4126D11A929FB800314F26 /* Build configuration list for PBXProject "BurgerMenuWithEverythingOnIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4126FA1A929FB800314F26 /* Debug */,
+				FF4126FB1A929FB800314F26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4126FC1A929FB800314F26 /* Build configuration list for PBXNativeTarget "BurgerMenuWithEverythingOnIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4126FD1A929FB800314F26 /* Debug */,
+				FF4126FE1A929FB800314F26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4126FF1A929FB800314F26 /* Build configuration list for PBXNativeTarget "BurgerMenuWithEverythingOnItTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4127001A929FB800314F26 /* Debug */,
+				FF4127011A929FB800314F26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF4126E01A929FB800314F26 /* BurgerMenuWithEverythingOnIt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF4126E11A929FB800314F26 /* BurgerMenuWithEverythingOnIt.xcdatamodel */,
+			);
+			currentVersion = FF4126E11A929FB800314F26 /* BurgerMenuWithEverythingOnIt.xcdatamodel */;
+			path = BurgerMenuWithEverythingOnIt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FF4126CE1A929FB800314F26 /* Project object */;
+}
