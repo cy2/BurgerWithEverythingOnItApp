@@ -14,7 +14,6 @@
 
 #import "BurgerContainerController.h"
 #import "MenuTableViewController.h"
-#import "ProfileViewController.h"
 
 @interface BurgerContainerController () <MenuPressedDelegate>
 
@@ -22,9 +21,7 @@
 @property (strong,nonatomic) UIButton *burgerButton;
 @property (strong,nonatomic) UITapGestureRecognizer *tapToClose;
 @property (strong,nonatomic) UIPanGestureRecognizer *slideRecognizer;
-
 @property (strong,nonatomic) UINavigationController *searchVC;
-@property (strong,nonatomic) ProfileViewController *profileVC;
 @property (nonatomic) NSInteger selectedRow;
 @property (strong,nonatomic) MenuTableViewController *menuVC;
 
@@ -37,12 +34,6 @@
 
 // to test crash - use an exception breakpoint
 //create an array and give me a value @ array out of bounds position
-
-
-
-
-
-
 
 
 NSInteger const slideRightBuffer = 300;
@@ -156,13 +147,6 @@ NSInteger const slideRightBuffer = 300;
     return _searchVC;
 }
 
--(ProfileViewController *)profileVC {
-    NSLog(@" BurgerContainerController > profileVC fired");
-    if (!_profileVC) {
-        _profileVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PROFILE_VC"];
-    }
-    return _profileVC;
-}
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     NSLog(@" BurgerContainerController > segue fired");
@@ -221,9 +205,6 @@ NSInteger const slideRightBuffer = 300;
                 destinationVC = self.searchVC;
                 break;
             case 1:
-                destinationVC = self.profileVC;
-                break;
-            case 2:
                 break;
             default:
                 break;

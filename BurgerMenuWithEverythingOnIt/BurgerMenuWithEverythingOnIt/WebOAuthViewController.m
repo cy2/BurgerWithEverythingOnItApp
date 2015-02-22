@@ -15,41 +15,43 @@
 
 @implementation WebOAuthViewController
 
-
 - (void)viewDidLoad {
     NSLog(@" WebOAuthViewController > viewDidLoad fired");
+    
     [super viewDidLoad];
-    
-    
     WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.frame];
+    
     [self.view addSubview:webView];
+    
     webView.navigationDelegate = self;
     
     NSString *urlString = @"https://stackexchange.com/oauth/dialog?client_id=4278&scope=no_expiry&redirect_uri=https://stackexchange.com/oauth/login_success";
+    
     NSURL *url = [NSURL URLWithString:urlString];
+    
     [webView loadRequest:[NSURLRequest requestWithURL:url]];
+    
+    
+    
     
     // Do any additional setup after loading the view.
 }
 
-
-
 -(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
-    NSLog(@" WebOAuthViewController > webView decidePolicyForNavigationAction fired");
-    
+    NSLog(@" WebOAuthViewController > webView fired");
     
     NSURLRequest *request = navigationAction.request;
     NSURL *url = request.URL;
-    
-    NSLog(@" return string %@",url.description);
-    
+    NSLog(@"returned url %@",url.description);
     
     if ([url.description containsString:@"access_token"]) {
-        NSLog(@" parsing return string... ");
         
         NSArray *components = [[url description] componentsSeparatedByString:@"="];
         NSString *token = components.lastObject;
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        
+        NSLog(@"we have access token %@",token);
+        
         [userDefaults setObject:token forKey:@"token"];
         [userDefaults synchronize];
         
@@ -58,17 +60,13 @@
     }
     decisionHandler(WKNavigationActionPolicyAllow);
     
+    
 }
 
-
-
 - (void)didReceiveMemoryWarning {
-    NSLog(@" WebOAuthViewController > didReceiveMemoryWarning fired");
-    
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 /*
  #pragma mark - Navigation

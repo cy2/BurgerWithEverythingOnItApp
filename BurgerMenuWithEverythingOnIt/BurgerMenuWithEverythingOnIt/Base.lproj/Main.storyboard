@@ -129,6 +129,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eP7-IE-btZ">
+                                <rect key="frame" x="0.0" y="64" width="293" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="1" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="i7z-Rw-CV1">
                                 <rect key="frame" x="0.0" y="108" width="600" height="384"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -139,14 +143,14 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZYo-1D-HHd" id="Pia-89-2Lc">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d9D-a1-ptG">
-                                                    <rect key="frame" x="15" y="4" width="70" height="89"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d9D-a1-ptG">
+                                                    <rect key="frame" x="15" y="4" width="45" height="45"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="70" id="cSh-dR-oFz"/>
-                                                        <constraint firstAttribute="height" constant="88.5" id="d2S-JI-Ybf"/>
+                                                        <constraint firstAttribute="width" constant="45" id="DbO-lb-Tmw"/>
+                                                        <constraint firstAttribute="height" constant="45" id="ScR-01-8xX"/>
                                                     </constraints>
                                                 </imageView>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYV-Bh-nTN">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hYV-Bh-nTN">
                                                     <rect key="frame" x="99" y="0.0" width="346" height="96"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -172,10 +176,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eP7-IE-btZ">
-                                <rect key="frame" x="0.0" y="64" width="293" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                         </subviews>
                     </view>
                     <navigationItem key="navigationItem" id="pt0-Mc-rQZ"/>

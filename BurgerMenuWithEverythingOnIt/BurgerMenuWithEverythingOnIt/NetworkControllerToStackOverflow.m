@@ -9,9 +9,11 @@
 
 
 #import "NetworkControllerToStackOverflow.h"
+#import "StackExchangeProfile.h"
 #import "Question.h"
 
 @implementation NetworkControllerToStackOverflow
+
 
 
 +(id)sharedService {
@@ -25,6 +27,7 @@
     return mySharedService;
 }
 
+
 -(void)fetchQuestionsWithSearchTerm:(NSString *)searchTerm completionHandler:(void (^)(NSArray *results, NSString *error))completionHandler {
     NSLog(@" StackOverflowService > fetchQuestionsWithSearchTerm fired");
     
@@ -35,12 +38,15 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *token = [defaults objectForKey:@"token"];
     
-    NSLog(@"token = %@",token);
     if (token) {
         urlString = [urlString stringByAppendingString:@"&access_token="];
         urlString = [urlString stringByAppendingString:token];
-        urlString = [urlString stringByAppendingString:@"*3sAmY3X0VF6I22Fe0QvTQ(("];
+        urlString = [urlString stringByAppendingString:@"&key="];
+        urlString = [urlString stringByAppendingString:@"JTdkZI0BkU8ZQrS7XsPKoA(("];
     }
+    
+    
+    NSLog(@"urlString = %@",urlString);
     
     NSURL *url = [NSURL URLWithString:urlString];
     
@@ -74,7 +80,7 @@
                     break;
                 }
                 default:
-                    NSLog(@"%ld",(long)statusCode);
+                    NSLog(@" response not good %ld",(long)statusCode);
                     break;
             }
             
@@ -100,6 +106,57 @@
             completionHandler(image);
         });
     });
+}
+
+-(void)fetchMyUserProfile:(void (^)(NSArray *, NSString *))completionHandler {
+    
+    NSString *urlString = @"https://api.stackexchange.com/2.2/me?order=desc&sort=reputation&site=stackoverflow";
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *token = [defaults objectForKey:@"token"];
+    if (token) {
+        urlString = [urlString stringByAppendingString:@"&access_token="];
+        urlString = [urlString stringByAppendingString:token];
+        urlString = [urlString stringByAppendingString:@"&key="];
+        urlString = [urlString stringByAppendingString:@"JTdkZI0BkU8ZQrS7XsPKoA(("];
+    }
+    
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+    request.HTTPMethod = @"GET";
+    
+    NSURLSession *session = [NSURLSession sharedSession];
+    
+    NSURLSessionTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error) {
+            completionHandler(nil,@"Could not connect");
+        } else {
+            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+            NSInteger statusCode = httpResponse.statusCode;
+            
+            switch (statusCode) {
+                case 200 ... 299: {
+                    NSLog(@"%d",(int)statusCode);
+                    NSArray *results = [StackExchangeProfile profileDataFromJSON:data];
+                    
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        if (results) {
+                            completionHandler(results,nil);
+                        } else {
+                            completionHandler(nil,@"Search could not be completed");
+                        }
+                    });
+                    break;
+                }
+                default:
+                    NSLog(@"%ld",(long)statusCode);
+                    break;
+            }
+            
+        }
+    }];
+    [dataTask resume];
+    
+    
 }
 
 @end

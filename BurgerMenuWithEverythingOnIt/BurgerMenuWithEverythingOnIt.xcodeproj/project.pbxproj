@@ -18,12 +18,12 @@
 		FF4127041A929FDD00314F26 /* BurgerContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4127031A929FDD00314F26 /* BurgerContainerController.m */; };
 		FF41270A1A92A07900314F26 /* WebOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4127091A92A07900314F26 /* WebOAuthViewController.m */; };
 		FF41270D1A92A0AD00314F26 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF41270C1A92A0AD00314F26 /* MenuTableViewController.m */; };
+		FF93A8AF1A9A5E6B00CD6677 /* StackExchangeProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = FF93A8AE1A9A5E6B00CD6677 /* StackExchangeProfile.m */; };
 		FFB077811A95395600D77DEB /* SearchQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB077801A95395600D77DEB /* SearchQuestionsViewController.m */; };
 		FFB077841A953A9B00D77DEB /* NetworkControllerToStackOverflow.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB077831A953A9B00D77DEB /* NetworkControllerToStackOverflow.m */; };
 		FFB077871A953B0400D77DEB /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB077861A953B0400D77DEB /* Question.m */; };
 		FFB0778A1A953B7900D77DEB /* QuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB077891A953B7900D77DEB /* QuestionCell.m */; };
 		FFB0778D1A953FA400D77DEB /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB0778C1A953FA400D77DEB /* Constants.m */; };
-		FFB077911A95415D00D77DEB /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB077901A95415D00D77DEB /* ProfileViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FFC031ED1A9A3CF500B012CC /* BurgerWithTheWorksImage_w25_h25.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC031EC1A9A3CF500B012CC /* BurgerWithTheWorksImage_w25_h25.png */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +58,8 @@
 		FF4127091A92A07900314F26 /* WebOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebOAuthViewController.m; sourceTree = "<group>"; };
 		FF41270B1A92A0AD00314F26 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
 		FF41270C1A92A0AD00314F26 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
+		FF93A8AD1A9A5E6B00CD6677 /* StackExchangeProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackExchangeProfile.h; sourceTree = "<group>"; };
+		FF93A8AE1A9A5E6B00CD6677 /* StackExchangeProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackExchangeProfile.m; sourceTree = "<group>"; };
 		FFB0777F1A95395600D77DEB /* SearchQuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchQuestionsViewController.h; sourceTree = "<group>"; };
 		FFB077801A95395600D77DEB /* SearchQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchQuestionsViewController.m; sourceTree = "<group>"; };
 		FFB077821A953A9B00D77DEB /* NetworkControllerToStackOverflow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkControllerToStackOverflow.h; sourceTree = "<group>"; };
@@ -69,8 +71,6 @@
 		FFB0778B1A953FA400D77DEB /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		FFB0778C1A953FA400D77DEB /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		FFB0778E1A95407100D77DEB /* MenuPressedDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuPressedDelegate.h; sourceTree = "<group>"; };
-		FFB0778F1A95415D00D77DEB /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
-		FFB077901A95415D00D77DEB /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		FFC031EC1A9A3CF500B012CC /* BurgerWithTheWorksImage_w25_h25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BurgerWithTheWorksImage_w25_h25.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,8 +123,6 @@
 				FF4126E41A929FB800314F26 /* ViewController.m */,
 				FF4127021A929FDD00314F26 /* BurgerContainerController.h */,
 				FF4127031A929FDD00314F26 /* BurgerContainerController.m */,
-				FFB0778F1A95415D00D77DEB /* ProfileViewController.h */,
-				FFB077901A95415D00D77DEB /* ProfileViewController.m */,
 				FFB0777F1A95395600D77DEB /* SearchQuestionsViewController.h */,
 				FFB077801A95395600D77DEB /* SearchQuestionsViewController.m */,
 				FF41270B1A92A0AD00314F26 /* MenuTableViewController.h */,
@@ -132,6 +130,8 @@
 				FFB0778E1A95407100D77DEB /* MenuPressedDelegate.h */,
 				FFB077821A953A9B00D77DEB /* NetworkControllerToStackOverflow.h */,
 				FFB077831A953A9B00D77DEB /* NetworkControllerToStackOverflow.m */,
+				FF93A8AD1A9A5E6B00CD6677 /* StackExchangeProfile.h */,
+				FF93A8AE1A9A5E6B00CD6677 /* StackExchangeProfile.m */,
 				FFB077881A953B7800D77DEB /* QuestionCell.h */,
 				FFB077891A953B7900D77DEB /* QuestionCell.m */,
 				FFB0778B1A953FA400D77DEB /* Constants.h */,
@@ -309,7 +309,7 @@
 				FFB0778A1A953B7900D77DEB /* QuestionCell.m in Sources */,
 				FF41270D1A92A0AD00314F26 /* MenuTableViewController.m in Sources */,
 				FFB077871A953B0400D77DEB /* Question.m in Sources */,
-				FFB077911A95415D00D77DEB /* ProfileViewController.m in Sources */,
+				FF93A8AF1A9A5E6B00CD6677 /* StackExchangeProfile.m in Sources */,
 				FF41270A1A92A07900314F26 /* WebOAuthViewController.m in Sources */,
 				FFB077841A953A9B00D77DEB /* NetworkControllerToStackOverflow.m in Sources */,
 				FFB0778D1A953FA400D77DEB /* Constants.m in Sources */,

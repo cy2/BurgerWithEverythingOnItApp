@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+//will use this for OAUTH and Network Controller for holding all the strings
+
 NSString *const MyFirstConstant = @"Hello";
 NSString *const MySecondConstant = @"Goodbye";
 

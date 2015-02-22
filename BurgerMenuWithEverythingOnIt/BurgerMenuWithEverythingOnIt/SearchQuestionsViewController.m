@@ -26,7 +26,6 @@
     
     [super viewDidLoad];
     self.searchBar.delegate = self;
-
     self.searchBar.text = @"Not finished homework yet!";
     self.tableView.dataSource = self;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
@@ -38,6 +37,8 @@
     NSLog(@" SearchQuestionsViewController > searchBarSearchButtonClicked fired");
     
     NSLog(@"The text entered is @%@",searchBar.text);
+    
+    [self.searchBar resignFirstResponder];
     
     [[NetworkControllerToStackOverflow sharedService] fetchQuestionsWithSearchTerm:searchBar.text completionHandler:^(NSArray *results, NSString *error) {
         
